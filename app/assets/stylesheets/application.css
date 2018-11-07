@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+.header
+{
+    height:75px;
+    background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.header-container
+{
+    width:80%;
+    margin:auto;
+}
+
+.header-title
+{
+    float:left;
+    line-height:75px;
+    color:white;
+}
+
+.em-information_source{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.header-link
+{
+    float:right;
+    line-height:75px;
+    color:white;
+    padding-left:10px;
+    margin-left:20px;
+    font-size:25px;
+
+}
+
+.header a{
+  color:white;
+  margin-left:20px;
+  margin-right:5px;
+  text-decoration:none;
+}
+.header a:hover,
+.header a:active{
+  color:#ff7675;
+}
+
+/* HEADER */
+
+.main-title{
+  margin-top:50px;
+  margin-bottom:50px;
+  text-align:center;
+}
+
+.card{
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-top:20px; 
+}
+  
+/* Home */
+
+
+#ins{
+    float:right;
+    background-color:#d63031;
+    border-color:#d63031;
+    margin-right:350px;
+    -moz-box-shadow: 3px 4px 0px 0px #899599;
+    -webkit-box-shadow: 3px 4px 0px 0px #899599;
+    box-shadow: 3px 4px 0px 0px #899599;
+  }
+  
+  #con{
+    float:left;
+    background-color:#d63031;
+    border-color:#d63031;
+    margin-left:350px;
+    -moz-box-shadow: 3px 4px 0px 0px #899599;
+    -webkit-box-shadow: 3px 4px 0px 0px #899599;
+    box-shadow: 3px 4px 0px 0px #899599;
+  }
+
+.btn-primary{
+    background-color:#d63031;
+    border-color:#d63031;
+    -moz-box-shadow: 3px 4px 0px 0px #899599;
+    -webkit-box-shadow: 3px 4px 0px 0px #899599;
+    box-shadow: 3px 4px 0px 0px #899599;
+}
+
+.btn-primary:active,
+.btn-primary:hover{
+    background-color:#ff7675;
+    border-color:#ff7675;
+}
+
+
+
+.container-cent{
+    margin-top:200px;
+    text-align:center;
+  }
+
+.colf{
+    font-family: 'Poor Story', cursive;
+}
+
+.mrgt{
+    margin-top:10px;
+}
+
+.result{
+    margin-top:15px;
+}
+.mid{
+    display:flex;
+    justify-content:center;
+}
+
+/* Home */
+
+/* FOOTER */
+
+.footer-container
+{
+    width:90%;
+    margin:auto;
+    justify-content:center;
+    display:inline;
+}
+
+.footer-link-container
+{
+   display:flex;
+   justify-content:center;
+   width:80%;
+   margin:auto;
+}
+
+.footer-heart-container
+{
+   display:flex;
+   justify-content:center;
+   width:80%;
+   margin:auto;
+   padding-top:25px;
+}
+
+.footer-link
+{
+  color:white;
+  font-size:25px;
+  text-decoration:none;
+  display:flex;
+  justify-content:center;
+  padding-right:25px;
+  padding-top:5px;
+}
+
+.footer-heart
+{
+  font-size:13px;
+  margin-top:15px;
+  justify-content:center;
+  display:flex;
+  color:white;
+}
+
+#heart
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.footer
+{
+    position:fixed;
+    height:100px;
+    width:100%;
+    background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    font-family: 'Anton', sans-serif;
+    margin-top:30vh;
+    overflow:hidden;
+    bottom:0;
+}

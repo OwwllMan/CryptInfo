@@ -1,0 +1,1313 @@
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:41:34 +0100
+  
+PG::ConnectionBad (FATAL:  la base de données « CryptInfo_development » n'existe pas
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (272.2ms)[0m  [1m[35mCREATE DATABASE "CryptInfo_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (229.7ms)[0m  [1m[35mCREATE DATABASE "CryptInfo_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3023697062921105235)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCryptos (20181107125919)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "cryptos" ("id" bigserial primary key, "cryptoname" character varying, "cryptovalue" character varying, "cryptochange1h" character varying, "cryptochange24h" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181107125919_create_cryptos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181107125919"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-07 13:41:56.580020"], ["updated_at", "2018-11-07 13:41:56.580020"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3023697062921105235)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:42:04 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::CryptScrap):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:42:40 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::CryptScrap):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:46:20 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::CryptScrap):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:47:15 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::CryptScrap):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:48:31 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::CryptScrap):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:48:43 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::CryptScrap):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:50:03 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::CryptScrap):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:50:57 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 11323ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `crypto_names' for #<CryptScrap:0x0000563f89c1d5d0>
+Did you mean?  crypto_name):
+  
+app/services/crypt_scrap.rb:39:in `perform'
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:52:18 +0100
+  
+ActionController::RoutingError (uninitialized constant HomeController::CryptScrapService):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:52:38 +0100
+  
+ActionController::RoutingError (uninitialized constant HomeController::CryptScr):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:53:12 +0100
+  
+ActionController::RoutingError (uninitialized constant HomeController::CryptScr):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:53:54 +0100
+  
+LoadError (cannot load such file -- /home/owl/Bureau/CryptInfo/app/controllers/cryp_scrap_service):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:58:11 +0100
+  
+LoadError (cannot load such file -- cryp_scrap_service):
+  
+app/controllers/home_controller.rb:2:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:58:23 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 13683ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `crypto_names' for #<CryptScrap:0x00007fef5d7057c0>
+Did you mean?  crypto_name):
+  
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 14:59:33 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 15635ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `crypto_names' for #<CryptScrap:0x00007fef24f67c80>
+Did you mean?  crypto_name):
+  
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:05:06 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 19157ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `crypto_names' for #<CryptScrap:0x00007feee65f1248>
+Did you mean?  crypto_name):
+  
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:06:25 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 23242ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `crypto_names' for #<CryptScrap:0x00007feee6366528>
+Did you mean?  crypto_name):
+  
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:10:08 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 32592ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `crypto_names' for #<CryptScrap:0x00007fef5469f578>
+Did you mean?  crypto_name):
+  
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:12:43 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 960ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `<<' for nil:NilClass):
+  
+app/services/crypt_scrap_service.rb:14:in `block in crypto_name'
+app/services/crypt_scrap_service.rb:13:in `crypto_name'
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:15:16 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 13437ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `arrayOfCryptoValue' for #<CryptScrap:0x00007ff77cc77858>
+Did you mean?  @arrayOfCryptoName):
+  
+app/services/crypt_scrap_service.rb:14:in `block in crypto_name'
+app/services/crypt_scrap_service.rb:13:in `crypto_name'
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:16:47 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 13546ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `arrayOfCryptoValue' for #<CryptScrap:0x000056354fc43a30>
+Did you mean?  @arrayOfCryptoName):
+  
+app/services/crypt_scrap_service.rb:14:in `block in crypto_name'
+app/services/crypt_scrap_service.rb:13:in `crypto_name'
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:17:47 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 15523ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `arrayOfCryptoValue' for #<CryptScrap:0x000055e8c9a7f780>
+Did you mean?  arrayOfCryptoName):
+  
+app/services/crypt_scrap_service.rb:14:in `block in crypto_name'
+app/services/crypt_scrap_service.rb:13:in `crypto_name'
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:18:58 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 16971ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `arrayOfCryptoValue' for #<CryptScrap:0x00007fde381ba7b0>
+Did you mean?  arrayOfCryptoName):
+  
+app/services/crypt_scrap_service.rb:14:in `block in crypto_name'
+app/services/crypt_scrap_service.rb:13:in `crypto_name'
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:21:19 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 17484ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `arrayOfCryptoValue' for #<CryptScrap:0x00007fde36cf7080>
+Did you mean?  arrayOfCryptoName):
+  
+app/services/crypt_scrap_service.rb:14:in `block in crypto_name'
+app/services/crypt_scrap_service.rb:13:in `crypto_name'
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:22:05 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1443ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0)):
+  
+app/services/crypt_scrap_service.rb:27:in `hash_names_and_values'
+app/services/crypt_scrap_service.rb:39:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:23:14 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 15933ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `save' for #<CryptScrap:0x000056476fa73ca0>):
+  
+app/services/crypt_scrap_service.rb:40:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:24:40 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 20279ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `save' for #<CryptScrap:0x00007f3194435f90>):
+  
+app/services/crypt_scrap_service.rb:40:in `perform'
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:25:55 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1173ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `keys' for nil:NilClass):
+  
+app/controllers/home_controller.rb:7:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:27:17 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1296ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `keys' for nil:NilClass):
+  
+app/controllers/home_controller.rb:7:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:27:40 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1289ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `length' for nil:NilClass):
+  
+app/controllers/home_controller.rb:7:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:31:03 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1071ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:31:04 +0100
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 962ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:31:55 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1149ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:32:11 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1005ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `params' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:32:43 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1031ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `params' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:34:18 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1035ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:34:52 +0100
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1169ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:35:19 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1920ms (Views: 896.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 15:35:34 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XweL9F//KBsP7KkKMLoiplkru2TKYi9iCkkYdQvzNy46lJjTpRS0w8Cr868KvHq748eD4P5e8/WVUVZ7zFDuOw==", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1248ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:36:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 1071ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized class variable @@CryptoName in ActionView::CompiledTemplates):
+     8:   <% end %>
+     9: </div>
+    10: 
+    11: <% if @@CryptoName %>
+    12:   <h6>Le cours actuel de la monnaie <span id="name"><%= @CryptoName %> </span> est de <span id="rate"><%= @CryptoValue %></span></h6>
+    13: <% end %>
+  
+app/views/home/index.html.erb:11:in `_app_views_home_index_html_erb__1028604807344678044_69887502833780'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:37:14 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 1226ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap.css' with type 'text/css'
+Checked in these paths: 
+  /home/owl/Bureau/CryptInfo/app/assets/config
+  /home/owl/Bureau/CryptInfo/app/assets/images
+  /home/owl/Bureau/CryptInfo/app/assets/javascripts
+  /home/owl/Bureau/CryptInfo/app/assets/stylesheets
+  /home/owl/.rvm/gems/ruby-2.5.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/owl/.rvm/gems/ruby-2.5.1/gems/actioncable-5.2.1/lib/assets/compiled
+  /home/owl/.rvm/gems/ruby-2.5.1/gems/activestorage-5.2.1/app/assets/javascripts
+  /home/owl/.rvm/gems/ruby-2.5.1/gems/actionview-5.2.1/lib/assets/compiled
+  /home/owl/.rvm/gems/ruby-2.5.1/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/owl/Bureau/CryptInfo/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:15
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1341662264650582697_69887506017120'
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:38:19 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1036ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 15:38:26 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qy5readgMn3Wc0Aqa5cYRygR7sad1yYLNcNFhoLoA1/OvXheXYuupRk0Go9RkUBakv3WQqnr+pyq2wuIRUvaSg==", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1595ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:38:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 1101ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 15:39:02 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FNDJXd3N4fVT8VJsUs6e4H1LnRgZy2e+rhGImQK3O/NxQ9p6JyZ9LZy2CMloyMb9x6elnC33uykxCcaXxRTi5g==", "crpt"=>"$0.001545", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 1430ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 15:39:34 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eizbM90nwx8iIBM7mG1nAiUnEu2mG92dYV9eCXqedBUfv8gUJ8xfx+1nSZ6iaz8fn8sqaZInAQr+RxAHvT2tAA==", "crpt"=>"$0.996629", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 1299ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:40:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 1266ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 15:40:21 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VzJY0GanRiJMGfQmBvOstJgHm12Yz1xToAT6HBq6L3gyoUv3nEza+oNeroM89fSpIuuj2azzgMQ/HLQS3Rn2bQ==", "crpt"=>"$6520.88", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 1754ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:42:32 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1145ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 15:45:29 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 1327ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 15:45:33 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N1VzDYjSVGF24syH18vWzMRPb34IoPN866irB8ESJrJSxmAqcjnIubmlliLtzY7RfqNX+jycL+t0sOUJBrH/pw==", "crpt"=>"Ethereum", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 1370ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:09:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 1216ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected '<', expecting ')'
+    <link rel="stylesheet" href="h...
+    ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <link rel="stylesheet" href="https://use.fontawesome.com...
+                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...s/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ec...
+...                      ^~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+...                    ^~~~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:7: syntax error, unexpected '<'
+    <link rel="stylesheet" href="h...
+    ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <link rel="stylesheet" href="https://stackpath.bootstrap...
+                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:8: syntax error, unexpected '<'
+    <link href="https://afeld.gith...
+    ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...hub.io/emoji-css/emoji.css" rel="stylesheet">
+...                            ^~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...esheet_link_tag    'application', media: 'all', 'data-turbol...
+...                    ^~~~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...g    'application', media: 'all', 'data-turbolinks-track': '...
+...                            ^~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...plication', media: 'all', 'data-turbolinks-track': 'reload' ...
+...                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+... 'all', 'data-turbolinks-track': 'reload' );@output_buffer.s...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...data-turbolinks-track': 'reload' );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...script_include_tag 'application', 'data-turbolinks-track': '...
+...                    ^~~~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nclude_tag 'application', 'data-turbolinks-track': 'reload' ...
+...                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ation', 'data-turbolinks-track': 'reload' );@output_buffer.s...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...data-turbolinks-track': 'reload' );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:14: syntax error, unexpected '<', expecting ')'
+  </head>
+  ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:18: unknown regexp options - bdy
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+</html>
+^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:24: unterminated regexp meets end of file
+          end
+             ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:7: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:8: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:14: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:18: unknown regexp options - bdy
+app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:24: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:09:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 1000ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected '<', expecting ')'
+    <link rel="stylesheet" href="h...
+    ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <link rel="stylesheet" href="https://stackpath.bootstrap...
+                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:7: syntax error, unexpected '<'
+    <link href="https://afeld.gith...
+    ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...hub.io/emoji-css/emoji.css" rel="stylesheet">
+...                            ^~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...esheet_link_tag    'application', media: 'all', 'data-turbol...
+...                    ^~~~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...g    'application', media: 'all', 'data-turbolinks-track': '...
+...                            ^~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...plication', media: 'all', 'data-turbolinks-track': 'reload' ...
+...                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+... 'all', 'data-turbolinks-track': 'reload' );@output_buffer.s...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...data-turbolinks-track': 'reload' );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...script_include_tag 'application', 'data-turbolinks-track': '...
+...                    ^~~~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nclude_tag 'application', 'data-turbolinks-track': 'reload' ...
+...                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ation', 'data-turbolinks-track': 'reload' );@output_buffer.s...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...data-turbolinks-track': 'reload' );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:13: syntax error, unexpected '<', expecting ')'
+  </head>
+  ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:17: unknown regexp options - bdy
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:18: syntax error, unexpected '<'
+</html>
+^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:23: unterminated regexp meets end of file
+          end
+             ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:23: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:7: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:17: unknown regexp options - bdy
+app/views/layouts/application.html.erb:18: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:23: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:23: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:12:54 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 1494ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected '<', expecting ')'
+    <link rel="stylesheet" href="h...
+    ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <link rel="stylesheet" href="https://stackpath.bootstrap...
+                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:7: syntax error, unexpected '<'
+    <link href="https://afeld.gith...
+    ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+...hub.io/emoji-css/emoji.css" rel="stylesheet">
+...                            ^~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...esheet_link_tag    'application', media: 'all', 'data-turbol...
+...                    ^~~~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...g    'application', media: 'all', 'data-turbolinks-track': '...
+...                            ^~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...plication', media: 'all', 'data-turbolinks-track': 'reload' ...
+...                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+... 'all', 'data-turbolinks-track': 'reload' );@output_buffer.s...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...data-turbolinks-track': 'reload' );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...script_include_tag 'application', 'data-turbolinks-track': '...
+...                    ^~~~~~~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nclude_tag 'application', 'data-turbolinks-track': 'reload' ...
+...                           ^~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ation', 'data-turbolinks-track': 'reload' );@output_buffer.s...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...data-turbolinks-track': 'reload' );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:13: syntax error, unexpected '<', expecting ')'
+  </head>
+  ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:16: unknown regexp options - hadr
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:16: end pattern with unmatched parenthesis: /head>
+
+  <body>
+  '.freeze;@output_buffer.append=( render 'layouts/
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+...ppend=( render 'layouts/header' );@output_buffer.safe_append...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+  </body>
+  ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:19: unknown regexp options - ftr
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:19: end pattern with unmatched parenthesis: /body>
+  '.freeze;@output_buffer.append=( render 'layouts/
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:19: syntax error, unexpected tSTRING_BEG, expecting ')'
+...ppend=( render 'layouts/footer' );@output_buffer.safe_append...
+...                              ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:20: syntax error, unexpected '<', expecting ')'
+</html>
+^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:25: unterminated regexp meets end of file
+          end
+             ^
+/home/owl/Bureau/CryptInfo/app/views/layouts/application.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:7: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:13: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:16: unknown regexp options - hadr
+app/views/layouts/application.html.erb:16: end pattern with unmatched parenthesis: /head>
+app/views/layouts/application.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/layouts/application.html.erb:18: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:19: unknown regexp options - ftr
+app/views/layouts/application.html.erb:19: end pattern with unmatched parenthesis: /body>
+app/views/layouts/application.html.erb:19: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/layouts/application.html.erb:20: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:25: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:13:09 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 1873ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/owl/Bureau/CryptInfo/app/views"
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:   <%= render 'layouts/header' %>
+    15:     <%= yield %>
+    16:   </body>
+    17:   <%= render 'layouts/footer' %>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1341662264650582697_69887365881380'
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:13:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1327ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:15:36 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1869ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:15:55 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1041ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:16:11 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1225ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:17:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 996ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:17:51 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1151ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:18:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1059ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:18:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1390ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:18:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (133.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1238ms (Views: 224.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:19:08 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/owl/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (40.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1583ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:20:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1400ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:20:39 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1266ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:21:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1254ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:21:47 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1275ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:22:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1268ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:23:00 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1178ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:23:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1037ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:25:00 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1315ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:25:14 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1052ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:26:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1316ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:26:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1271ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:26:35 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1432ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:27:31 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1175ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:29:21 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1061ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:29:32 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BLEeI2lbr7dSMrkSBuHmZyyfuiYktOJyNgmO8XPss0NhIg0Ek7Azb51147c85756lnOCohCIPuWpEcD/tE9qVg==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1269ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:31:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1059ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:31:49 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ECrDJXuRLeVR8WMcfzBMcGY27zb/dMlaumcms65R0B91udACgXqxPZ62OblFNhRt3NrXsstIFc0lf2i9afIJCg==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1341ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:32:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1175ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:32:22 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1SMjlXfQtmLjJyDsCcxwGEDj12nRaGISUn3yXtaGLbOwsDCyjTsquixgekkzyigF+g/v7eVUvoXNZbxQESX0pg==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1330ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:33:08 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1265ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:33:11 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JQrZ1y67r3F9XY3BZPCAU+jOJ7yRkJUtT2a4T6Eg+3RAmcrw1FAzqbIa12Re9thOUiIfOKWsSbrQfvZBZoMiYQ==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1276ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:33:21 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZgyT4KpHQt5kMfhJGXfZ1hfMGU0M3H7xm/fRzHSNVn8Dn4DHUKzeBqt2ouwjcYHLrSAhyTjgomYE75/Csy6Pag==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1006ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:33:40 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZqQg9VeYmFmfaTQsgfrWUCtb4eGk1cx0mwCARIoxDxEDNzPSrXMEgVAubom7/I5NkbfZZZDpEOMEGM5KTZLWBA==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1216ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:33:51 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xkIW9kW06nWOb+MiVqNnw9ZV+QcZn55GhnULS1OkJ5ej0QXRv192rUEouYdspT/ebLnBgy2jQtEZbUVFlAf+gg==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1291ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:35:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1278ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:36:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1168ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:36:23 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PAyYgYb+bSm/PPR8Nn7Zn6ACAHs7UF8EbuXyEWHqH4NZn4umfBXx8XB7rtkMeIGCGu44/w9sg5Px/bwfpknGlg==", "crpt"=>"Cardano", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1071ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:36:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1341ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:37:30 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1018ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:38:08 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1508ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:38:20 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1239ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:38:32 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+8L43/vzvKVm0giSpDFb/VA3tnamBwSU5+7qtgQbHnieUev4ARggfamVUjeeNwPg6tuO8pI72AN49qS4w7jHbQ==", "crpt"=>"XRP", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (78.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1510ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 16:39:20 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1235ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-07 16:39:24 +0100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6JgTAmYS6QQNSH7eByrOF6Ka1D/XkptxNggdaVcW0ueMXNr83PXfN9ye15CGvMl5GZT1MtilvpbwG57Yv+CXg==", "crpt"=>"Bitcoin", "commit"=>"Valider"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1178ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+

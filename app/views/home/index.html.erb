@@ -1,0 +1,23 @@
+<% provide(:title, "Home") %>
+<div class="container-cent">
+    <h1>Bienvenue sur CryptInfo <i class="em em-information_source"></i></h1> 
+    <h3>Sélectionez une Cryptomonnaie</h3> 
+    <div class="mid"> 
+        <div class="form-group row">
+        <div class="col-xs-2">
+            <%= form_tag('/') do %>
+                <%= select_tag "crpt", options_for_select(@array), class: 'form-control'%>
+                <%= submit_tag "Valider", class: "mrgt btn btn-outline-info" %>
+            <% end %>
+        </div>
+        </div>
+    </div>
+
+
+    <% if @CryptoName %>
+    <div class="result"
+        <% t = Time.now %>
+        <h4>La Cryptomonnaie <%= @CryptoName %> a une valeur de <%= @CryptoValue %><i class="em em-moneybag"></i> à <%= t.strftime("%I:%M%p") %></h4>
+    <div>
+    <% end %>
+<div>
